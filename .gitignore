@@ -1,1 +1,5 @@
 .ipynb_checkpoints
+
+# ignore c++ build files
+*.out
+*.out.txt
