@@ -10,7 +10,7 @@ string match(string s, string target)
     for (int i = 0; i < target.size(); i++)
     {
         if (s[i] == target[i]) a++;
-        else if (i != target.size() - 1 && target.find(s[i], i + 1) != string::npos) b++;
+        else if (target.find(s[i]) != string::npos) b++;
     }
     return to_string(a) + "A" + to_string(b) + "B";
 }
